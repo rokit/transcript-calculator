@@ -57,8 +57,8 @@ export default {
   name: 'TranscriptCalculator',
   data () {
     return {
-      claimed: '9:00',
-      submitted: '11:00',
+      claimed: '12:00',
+      submitted: '14:00',
       breakTime: '00:00',
       rate: '0.50',
       fileLength: '00:30:00',
@@ -162,7 +162,7 @@ $input-bg: #555;
 $results-bg: rgba(0, 0, 0, 0.692);
 
 ::selection {
-  background: rgb(231, 224, 224);
+  background: rgb(114, 114, 114);
 }
 #container {
   font-size: 1rem;

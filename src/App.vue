@@ -11,7 +11,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$bg-width: 600px/4;
+$bg-height: 600px/4;
+
 body {
   margin: 0px;
   overflow: hidden;
@@ -24,11 +27,11 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('./assets/bg.svg');
-  background-size: 140px 140px;
+  background-image: url('./assets/diamonds.svg');
+  background-size: $bg-width $bg-height;
   min-width:  200vw;
   min-height: 200vh;
-  animation: move-bg 30s linear infinite;
+  // animation: move-bg 30s linear infinite;
 }
 #app {
   display: flex;
@@ -44,7 +47,7 @@ body {
     transform: translate(0,0) rotate(0.01deg);
   }
   to {
-    transform: translate(-140px, 140px) rotate(0.01deg);
+    transform: translate(-$bg-width, $bg-height) rotate(0.01deg);
   }
 }
 </style>
