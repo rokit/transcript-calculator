@@ -12,8 +12,8 @@ export default {
 </script>
 
 <style lang="scss">
-$bg-width: 600px/4;
-$bg-height: 600px/4;
+$bg-width: 520px/2;
+$bg-height: 1000px/2;
 
 body {
   margin: 0px;
@@ -28,6 +28,7 @@ body {
   left: 0;
   right: 0;
   background-image: url('./assets/diamonds.svg');
+  // background-color: #333;
   background-size: $bg-width $bg-height;
   min-width:  200vw;
   min-height: 200vh;
